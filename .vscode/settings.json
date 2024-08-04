@@ -1,14 +1,13 @@
 {
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
   "editor.formatOnSaveMode": "file",
-  "files.autoSave": "onFocusChange",
-  "editor.quickSuggestions": {
-    "strings": true
-  },
   "[markdown]": {
     "editor.wordWrap": "wordWrapColumn",
     "editor.wordWrapColumn": 80
-  }
+  },
+  "rust-analyzer.files.excludeDirs": [
+    ".direnv",
+    ".devenv",
+  ]
 }

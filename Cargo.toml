@@ -1,0 +1,11 @@
+[package]
+name = "jeffreyharmon_dev"
+version = "0.0.0"
+edition = "2021"
+
+[dependencies]
+ascii = "1.1.0"
+comrak = "0.26.0"
+maud = "0.26.0"
+syntect = "5.2.0"
+tiny_http = "0.12.0"

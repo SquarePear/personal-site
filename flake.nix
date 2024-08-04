@@ -12,23 +12,9 @@
       perSystem = { config, self', inputs', pkgs, system, ... }:
         {
           devenv.shells.default = {
-            packages = [
-              pkgs.bun
-            ];
-
-            scripts = {
-              dev.exec = ''
-                bun --bun run dev
-              '';
-
-              build.exec = ''
-                bun --bun run build
-              '';
-
-              run.exec = ''
-                bun --bun run build
-                bun --bun .output/server/index.mjs
-              '';
+            languages = {
+              rust.enable = true;
+              nix.enable = true;
             };
           };
         };
